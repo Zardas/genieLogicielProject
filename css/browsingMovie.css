@@ -1,0 +1,96 @@
+/* Movie Browsed */
+#moviesBrowsed {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#moviesBrowsed #movie {
+    border: 1px solid black;
+    margin: 1em;
+    width: 200px;
+    height: 100px;
+    cursor: pointer;
+}
+
+#moviesBrowsed #movie p {
+    font-size: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/* Movie selected */
+#selectedMovie {
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: var(--light-orange);
+    text-align: center;
+    /* display: none; */
+}
+
+/* Mobile version */
+@media all and (max-width: 600px) {
+    #selectedMovie #movie { /* Affiche du film */
+        border: 1px solid var(--light-orange);
+        height: 20%;
+        width: 70%;
+        position: relative;
+        top: 5%;
+        left: 15%;
+        cursor: pointer;
+    }
+    #selectedMovie h3 { /* Titre du film */
+        position: absolute;
+        top: 27%;
+        cursor: pointer;
+        text-align: center;
+        width: 100%;
+        font-size: 1.5em;
+    }
+    #selectedMovie #watchMovie {
+        position: absolute;
+        top: 35%;
+        width: 100%;
+    }
+    #selectedMovie #watchMovie button {
+        height: 4em;
+        width: 50%;
+        font-size: 1em;
+        font-weight: bold;
+        background-color: var(--light-orange);
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    #selectedMovie #options {
+        border: 1px solid red;
+        position: absolute;
+        top: 47%;
+        text-align: left;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #selectedMovie #options #readSynopsis {
+        margin-bottom: .5em;
+        font-size: 1em;
+    }
+    #selectedMovie #options #synopsis {
+        border: 1px solid blue;
+        height: 1.5em;
+        overflow: hidden;
+    }
+    #selectedMovie #options #synopsisSuite {
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+/* Tablet version and Desktop version */
