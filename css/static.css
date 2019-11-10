@@ -86,7 +86,9 @@ a {
 .item:hover {
     background-color: var(--brighter-orange);
 }
-
+nav ul li ul {
+    display: none;
+}
 
 /* Tablet menu */
 @media all and (min-width: 600px) {
@@ -130,7 +132,6 @@ a {
         background: var(--light-orange);
         color: var(--main-black);
     }
-    
 }
 
 /* Desktop menu */
@@ -174,6 +175,24 @@ a {
     }
     .menu li.button {
         padding-right: 0;
+    }
+
+    .itemMonCompte {
+        width: 20%;
+        border: 1px solid black;
+    }
+    /* Sous-menu */
+    nav ul li ul {
+        display: none;
+        position: absolute;
+        margin-top: 0.9em;
+        background-color: var(--light-orange);
+    }
+    nav ul li:hover ul {
+        display: block;
+    }
+    nav ul li ul li:hover {
+        background-color: var(--brighter-orange);
     }
 }
 
