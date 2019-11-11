@@ -57,6 +57,10 @@ a {
 .button.secondary {
     border-bottom: 1px #000000 solid;
 }
+.toogle a img {
+    width: 1.5em;
+    height: 1.5em;
+}
 
 
 /* Mobile menu */
@@ -80,12 +84,13 @@ a {
 .item {
     width: 100%;
     text-align: center;
-    order: 3;
+    order: 4;
     cursor: pointer;
 }
 .item:hover {
     background-color: var(--brighter-orange);
 }
+
 nav ul li ul {
     display: none;
 }
