@@ -11,10 +11,16 @@
 
 #moviesBrowsed #movie {
     border: 1px solid black;
-    margin: 1em;
+    margin: 1.5em;
     width: 200px;
     height: 100px;
     cursor: pointer;
+    text-align: center;
+    background-color: rgba(20, 19, 19, 0.9);
+}
+#moviesBrowsed #movie img {
+    height: 100%;
+    width: 100%;
 }
 
 #moviesBrowsed #movie p {
@@ -33,8 +39,7 @@
     width: 100%;
     height: 100%;
     color: var(--light-orange);
-    text-align: center;
-    /* display: none; */
+    /*display: none;*/
 }
 #selectedMovie #closeWindow {
         width: 1.5em;
@@ -44,9 +49,48 @@
         margin-top: 3%;
         cursor: pointer;
 }
+#selectedMovie #watchTrailerPlusDonnees button {
+    height: 4em;
+    width: 40%;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: transparent;
+    color: var(--light-orange);
+    border: 1px solid var(--light-orange);
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 3%;
+    vertical-align: top;
+}
+#selectedMovie #options { /* Synopsis */
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+#selectedMovie #options #readSynopsis {
+    margin-bottom: .5em;
+    font-size: 1em;
+    font-weight: bold;
+    color: var(--light-orange);
+    background-color: transparent;
+    border: none;
+}
+#selectedMovie #options #readSynopsis img {
+    height: 1em;
+    width: 1em;
+}
+#selectedMovie #options #synopsis {
+    height: 1.5em;
+    overflow: hidden;
+}
+#selectedMovie #options #synopsisSuite {
+    font-weight: bold;
+    cursor: pointer;
+}
 
-/* Mobile version */
-@media all and (max-width: 600px) {
+/* Tablet and Mobile version */
+@media all and (max-width: 900px) {
     #selectedMovie #movie { /* Affiche du film */
         border: 1px solid var(--light-orange);
         height: 20%;
@@ -54,6 +98,10 @@
         margin-top: 5%;
         margin-left: 15%;
         cursor: pointer;
+    }
+    #selectedMovie #movie img {
+        height: 100%;
+        width: 100%;
     }
     #selectedMovie h3 { /* Titre du film */
         margin-top: 2.5%;
@@ -65,7 +113,8 @@
     #selectedMovie #watchMovie { /* Bouton regarder le film */
         margin-top: 5%;
         width: 50%;
-        font-size: 1em;
+        margin-left: 25%;
+        font-size: .8em;
         font-weight: bold;
         background-color: var(--light-orange);
         border: none;
@@ -79,42 +128,54 @@
         margin-right: 5%;
         margin-top: 5%;
     }
-    #selectedMovie #watchTrailerPlusDonnees button {
-        height: 4em;
+}
+
+
+/* Desktop version */
+@media all and (min-width: 900px) {
+    #selectedMovie #movie { /* Affiche du film */
+        border: 1px solid var(--light-orange);
+        height: 60%;
+        width: 300px;
+        margin-top: 10%;
+        margin-left: 10%;
+        cursor: pointer;
+        display: inline-block;
+        vertical-align: top;
+    }
+    #selectedMovie #movie img {
+        height: 100%;
+        width: 100%;
+    }
+    #selectedMovie #divSide {
+        display: inline-block;
+        margin-top: 10%;
         width: 40%;
+        margin-left: 5%;
+    }
+    #selectedMovie #divSide h3 {
+        font-size: 2em;
+        margin-bottom: 5%;
+    }
+    #selectedMovie #watchMovie {
         font-size: 1em;
         font-weight: bold;
         background-color: var(--light-orange);
         border: none;
         cursor: pointer;
         text-transform: uppercase;
-        margin: 3%;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        margin-bottom: 7%;
     }
-    #selectedMovie #options { /* Synopsis */
-        text-align: left;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-top: 5%;
+    #selectedMovie #watchMovie:hover {
+        background-color: var(--brighter-orange);
     }
-    #selectedMovie #options #readSynopsis {
-        margin-bottom: .5em;
-        font-size: 1em;
-        font-weight: bold;
-        color: var(--light-orange);
-        background-color: transparent;
-        border: none;
-    }
-    #selectedMovie #options #readSynopsis img {
-        height: 1em;
-        width: 1em;
-    }
-    #selectedMovie #options #synopsis {
-        height: 1.5em;
-        overflow: hidden;
-    }
-    #selectedMovie #options #synopsisSuite {
-        font-weight: bold;
-        cursor: pointer;
+    #selectedMovie #watchTrailerPlusDonnees button {
+        margin: 0;
+        margin-right: 6%;
+        margin-bottom: 6%;
     }
 }
-/* Tablet version and Desktop version */

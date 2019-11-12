@@ -38,10 +38,12 @@
 
         <!-- Exemples for demo -->
         <div id="moviesBrowsed">
-            <div id="movie">
+            <div id="movie" onclick="selectMovie(1)">
+                <img src="../images/posters/poster1h.jpg" alt="Movie 1" />
                 <p>Movie 1</p>
             </div>
-            <div id="movie">
+            <div id="movie" onclick="selectMovie(2)">
+                <img src="../images/posters/poster2h.jpg" alt="Movie 2" />
                 <p>Movie 2</p>
             </div>
             <div id="movie">
@@ -76,24 +78,28 @@
             <div id="close">
                 <img src="../images/crossWhite.png" alt="Fermer la fenêtre" onclick="eventWindow()" id="closeWindow" />
             </div>
-            <div id="movie"></div>
-
-            <h3>Movie Title</h3>
-
-            <button id="watchMovie">Regarder le film ►</button>
-
-            <div id="watchTrailerPlusDonnees">
-                <button>Trailer</button>
-                <button>Données du film</button>
+            <div id="movie">
+                <img alt="Poster du film" id="moviePoster" />
             </div>
 
-            <div id="options">
-                <button id="readSynopsis" onclick="devellopSynopsis()">
-                    <img src="../images/undeveloppLogo.png" alt="Devellop" id="synopsisDevellop" />
-                    Synopsis
-                </button>
-                <div id="synopsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed laoreet libero, tempor malesuada nisl. Vivamus iaculis molestie ligula ut dictum. Nullam nisl nisi, pharetra sit amet libero non, viverra hendrerit nisi. Mauris tincidunt dapibus orci, vitae hendrerit elit suscipit sed. Mauris laoreet mollis diam et consequat. Morbi ex ex, facilisis nec tincidunt a, placerat ac nisi. Nullam at orci varius, faucibus nisl ut, lacinia augue. Nullam ac tincidunt justo, ac aliquet orci. Integer quis fermentum turpis. Aenean maximus, enim malesuada ullamcorper mollis, sapien ex laoreet quam, ut feugiat augue massa at magna. Donec augue mauris, scelerisque at hendrerit sit amet, tempor ac nulla. Cras vitae sapien nisi.</div>
-                <div id="synopsisSuite">...</div>
+            <div id="divSide">
+                <h3>Movie Title</h3>
+
+                <button id="watchMovie">Regarder le film ►</button>
+
+                <div id="watchTrailerPlusDonnees">
+                    <button>Trailer</button>
+                    <button>Données du film</button>
+                </div>
+
+                <div id="options">
+                    <button id="readSynopsis" onclick="devellopSynopsis()">
+                        <img src="../images/undeveloppLogo.png" alt="Devellop" id="synopsisDevellop" />
+                        Synopsis
+                    </button>
+                    <div id="synopsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed laoreet libero, tempor malesuada nisl. Vivamus iaculis molestie ligula ut dictum. Nullam nisl nisi, pharetra sit amet libero non, viverra hendrerit nisi. Mauris tincidunt dapibus orci, vitae hendrerit elit suscipit sed. Mauris laoreet mollis diam et consequat. Morbi ex ex, facilisis nec tincidunt a, placerat ac nisi. Nullam at orci varius, faucibus nisl ut, lacinia augue. Nullam ac tincidunt justo, ac aliquet orci. Integer quis fermentum turpis. Aenean maximus, enim malesuada ullamcorper mollis, sapien ex laoreet quam, ut feugiat augue massa at magna. Donec augue mauris, scelerisque at hendrerit sit amet, tempor ac nulla. Cras vitae sapien nisi.</div>
+                    <div id="synopsisSuite">...</div>
+                </div>
             </div>
         </div>
 

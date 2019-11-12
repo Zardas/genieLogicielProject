@@ -1,9 +1,31 @@
+let windowOpen = false;
 
+/* Open Window */
 
+function selectMovie(movieId) {
+    let windowMovie = document.getElementById("selectedMovie");
 
+    if(!windowOpen) {
+        windowMovie.style.display = "block";
+
+        let moviePoster = document.getElementById("moviePoster");
+        console.log(screen.width);
+        if(screen.width <= 900) { /* Version tablette ou mobile */
+            moviePoster.setAttribute("src", "../images/posters/poster" + movieId + "h.jpg");
+        } else {
+            moviePoster.setAttribute("src", "../images/posters/poster" + movieId + "v.jpg");
+        }
+        
+        /* L'utilisateur ne peut pas scroll lorsque il est en preview de film */
+        let body = document.getElementsByTagName('body')[0];
+        body.style.overflowX = "hidden";
+        body.style.overflowY = "hidden";
+    }
+
+    windowOpen = !windowOpen;
+}
 
 /* Close window */
-let windowOpen = true;
 
 function eventWindow() {
     let windowMovie = document.getElementById("selectedMovie");
@@ -12,7 +34,7 @@ function eventWindow() {
         windowMovie.style.display = "none";
     }
 
-    toogledMenu = !toogledMenu;
+    windowOpen = !windowOpen;
 }
 
 /* Devellop synopsis */
