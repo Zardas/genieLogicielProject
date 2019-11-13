@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Génie logiciel project</title>
+        <link rel="stylesheet" href="../css/static.css"> <!-- Nav + footer -->
+        <link rel="stylesheet" href="../css/inscription.css"> <!-- Search + movie browsed -->
+    </head>
+
+
+
+    <body>
+        <header>
+
+                <nav>
+                    <ul class="menu">
+                        <li class="logo"><a href="../index.html">Title</a></li>
+                        <li class="item"><a href="../index.html">Accueil</a></li>
+                        <li class="item"><a href="browsingMovie.html">Rechercher un film</a></li>
+                        <li class="item"><a href="#">A propos</a></li>
+                        <li class="item button"><a href="#">Connexion</a></li>
+                        <li class="item button secondary"><a href="pages/inscription.html">Inscription</a></li>
+                        <li class="toogle" onclick="toogleMenu()"><a href="#"><img src="../images/crossBlack.png"></a></li>
+                    </ul>
+                </nav>
+
+        </header>
+
+
+        <form>
+            <fieldset>
+                <legend>Inscription</legend>
+                
+                <!-- Mail -->
+                <div id="mail">
+                    <label for="mail">Adresse courriel : </label>
+                    <input name="mail" type="email" placeholder="example@domain.ca" required autofocus />
+                </div>
+
+                <!-- Username -->
+                <div id="usernameAndPassword">
+                    <div>
+                        <label for="username">Nom d'utilisateur : </label>
+                        <input name="username" type="text" />
+                    </div>
+                    <div>
+                            <label for="password">Mot de passe : </label>
+                            <input name="password" type="password" />
+                    </div>
+                </div>
+                <div id="submit">
+                    <input name="inscription" type="submit" value="Inscription" />
+                </div>
+            </fieldset>
+        </form>
+
+        <p id="dejaInscrit">Déjà inscrit ? <a href="connexion.html">Connexion</a></p>
+
+
+        <footer>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus lacinia est, vitae ultrices mauris ullamcorper at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dictum cursus tellus hendrerit pretium. Ut eu sapien est. Mauris interdum tellus id mi ultrices sollicitudin. Proin convallis ut mi at mollis. Cras vel suscipit tellus.
+        </footer>
+
+        <script type="text/javascript" src="../js/index.js"></script>
+    </body>
+</html>

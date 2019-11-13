@@ -132,11 +132,6 @@ nav ul li ul {
         color: #000000;
         border: 1px solid #000000;
     }
-    .button:active {
-        border: 1px solid var(--main-black);
-        background: var(--light-orange);
-        color: var(--main-black);
-    }
 }
 
 /* Desktop menu */
