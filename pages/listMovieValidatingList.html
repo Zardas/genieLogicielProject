@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <title>Génie logiciel project</title>
         <link rel="stylesheet" href="../css/static.css"> <!-- Nav + footer -->
-        <link rel="stylesheet" href="../css/account.css"><!-- Search + movie browsed -->
+        <link rel="stylesheet" href="../css/historic.css"><!-- Search + movie browsed -->
     </head>
 
 
@@ -15,7 +15,7 @@
 
                 <nav>
                     <ul class="menu">
-                        <li class="logo"><a href="../index.html">Title</a></li>
+                        <li class="logo"><a href="../index.html">Titre</a></li>
                         <li class="item"><a href="../index.html">Accueil</a></li>
                         <li class="item"><a href="browsingMovie.html">Rechercher un film</a></li>
                         <li class="item"><a href="#">A propos</a></li>
@@ -36,42 +36,34 @@
         </header>
 
 
-        <div id="addMovie">
-                <a href="listMovieValidatingList.html">
-                    <p>Valider un film</p>
-                    <img src="../images/plusBlack.png" alt="Plus" />
-                </a>
-            </div>
-
-        
-        <section id="basicInfos">
-            <div id="avatar">
-                <img src="../images/avatar.png" alt="Votre avatar" />
-                <button>Change</button>
-            </div>
-            <div>
-                <h3 id="username">Adam Smith</h3>
-                <h3 id="modifUsername">
-                    <form>
-                        <input name="newUsername" required placeholder="Your new username" type="text" id="newUsername" />
-                        <input name="submit" type="text" value="modifier" id="submit" onclick="submitUsernameChange()" />
-                    </form>
-                </h3>
-                <p>Administrateur</p>
-            </div>
-            <img src="../images/options.png" alt="modifier" id="option" onclick="modifUsername()" />
-        </section>
+        <button id="return" onclick="history.back()">
+                < Retour
+        </button>
 
 
-        <div id="other">
-            <button id="historic" class="customButton"><a href="movieHistory.html">Films validés</a></button>
-            <button id="published" class="customButton"><a href="memberList.html">Liste des membres</a></button>
-        </div>
+        <h3>Liste des films à valider</h3>
+
+        <ul id="historic">
+            <li>       
+                <a href="movieDetail.html"><p>Titre film 1 <span id="realisator"> ajouté par <span>membre1</span> le <span> 03/03/2019</span></span></p></a>
+                <img src="../images/validate.png" alt="Valider le film" id="validate" />
+                <img src="../images/crossRed.png" alt="Refuser le film" id="refuse" />
+            </li>
+            <li>
+                <a href="movieDetail.html"><p>Titre film 2 <span id="realisator"> ajouté par <span>membre3</span> le <span> 04/06/2019</span></span></p></a>
+                <img src="../images/validate.png" alt="Valider le film" id="validate" />
+                <img src="../images/crossRed.png" alt="Refuser le film" id="refuse" />
+            </li>
+            <li>
+                <a href="movieDetail.html"><p>Titre film 4 <span id="realisator"> ajouté par <span>membre9</span> le <span> 05/05/2019</span></span></p></a>
+                <img src="../images/validate.png" alt="Valider le film" id="validate" />
+                <img src="../images/crossRed.png" alt="Refuser le film" id="refuse" />
+            </li>
+        </ul>
         <footer>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus lacinia est, vitae ultrices mauris ullamcorper at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dictum cursus tellus hendrerit pretium. Ut eu sapien est. Mauris interdum tellus id mi ultrices sollicitudin. Proin convallis ut mi at mollis. Cras vel suscipit tellus.
         </footer>
 
         <script type="text/javascript" src="../js/index.js"></script>
-        <script type="text/javascript" src="../js/account.js"></script>
     </body>
 </html>
