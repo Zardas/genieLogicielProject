@@ -1,0 +1,162 @@
+section {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #c9c8c6;
+    padding: 2px;
+}
+section #option {
+    float: right;
+    height: 4%;
+    width: 4%;
+}
+@media all and (min-width: 900px) { /* Desktop mode */
+    section {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    section #option {
+        height: 20px;
+        width: 20px;
+    }
+}
+/* Infos de base */
+#basicInfos {
+    margin-top: 15%;
+    margin-bottom: 2.5%;
+}
+@media all and (min-width: 900px) { /* Desktop mode */
+    #basicInfos {
+        margin-top: 5%;
+    }
+}
+#basicInfos #avatar {
+    width: 10%;
+    height: 10%;
+    margin-right: 2.5%;
+    display: inline-block;
+    cursor: pointer;
+}
+#basicInfos #avatar img {
+    height: 100%;
+    width: 100%;
+}
+#basicInfos #avatar button {
+    width: 100%;
+    background-color: var(--light-orange);
+    text-transform: uppercase;
+    border: none;
+}
+#basicInfos #avatar button:hover {
+    background-color: var(--brighter-orange);
+}
+#basicInfos div {
+    display: inline-block;
+    vertical-align: top;
+    width: 70%;
+}
+#basicInfos #username {
+    color: var(--light-orange);
+    font-size: 2em;
+    margin-bottom: 10px;
+    cursor: pointer;
+    /*display: none;*/ /* Display */
+}
+#basicInfos #modifUsername {
+    margin-bottom: 10px;
+    font-size: 2em;
+    display: none; /* Display */
+}
+#basicInfos #modifUsername form #newUsername {
+    background-color: transparent;
+    border: 0px;
+    padding: 0.5em;
+    border-bottom: 1px solid #555555;
+}
+#basicInfos #modifUsername form #newUsername:hover {
+    border-bottom: 1px solid var(--light-orange);
+}
+#basicInfos #modifUsername form #submit {
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    color: var(--light-orange);
+    font-weight: bold;
+    cursor: pointer;
+}
+#basicInfos #modifUsername form #submit:hover {
+    color: var(--brighter-orange);
+}
+#basicInfos p {
+    margin-left: 5%;
+}
+#basicInfos p span {
+    font-weight: bold;
+}
+
+
+/* Argent dispo */
+#balance {
+    padding: 1em;
+}
+#balance #money {
+    width: 10%;
+    height: 10%;
+    margin-right: 2.5%;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: top;
+}
+#balance div {
+    display: inline-block;
+    width: 80%;
+}
+#balance p span {
+    font-weight: bold;
+}
+#balance hr {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+#balance form {
+    margin-bottom: 20px;
+    text-align: center;
+}
+#balance form #amount {
+    background-color: transparent;
+    border: 0px;
+    padding: 0.5em;
+    border-bottom: 1px solid #555555;
+}
+#balance form #amount:hover {
+    border-bottom: 1px solid var(--light-orange);
+}
+#balance form #submit {
+    background-color: var(--light-orange);
+    padding: 5px;
+    border: none;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+#balance form #submit:hover {
+    background-color: #e39b46;
+}
+#balance button {
+    float: right;
+    background-color: #d91e18;
+    padding: 2px;
+    border: none;
+}
+
+#other {
+    margin-top: 3%;
+    text-align: center;
+    margin-bottom: 3%;
+}
+#other button {
+    padding: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1em;
+    width: 25%;
+}
+
