@@ -37,12 +37,11 @@
 
 
         <div id="addMovie">
-            <a href="addMovie.html">
-                <p>Ajouter un film</p>
-                <img src="../images/plusBlack.png" alt="Plus" />
-            </a>
-        </div>
-
+                <a href="validateMovie.html">
+                    <p>Valider un film</p>
+                    <img src="../images/plusBlack.png" alt="Plus" />
+                </a>
+            </div>
 
         
         <section id="basicInfos">
@@ -58,30 +57,15 @@
                         <input name="submit" type="text" value="modifier" id="submit" onclick="submitUsernameChange()" />
                     </form>
                 </h3>
-                <p><a href="movieHistory.html"><span>73</span></a> films visionnés / <a href="historicPublished.html"><span>2</span></a> films soumis</p>
+                <p>Administrateur</p>
             </div>
             <img src="../images/options.png" alt="modifier" id="option" onclick="modifUsername()" />
         </section>
 
-        <section id="balance">
-            <img src="../images/money.png" alt="Logo money" id="money" />
-            <div>
-                <p>Vous avez actuellement <span>99 $CA</span> sur votre balance</p>
-                <hr />
-                <form>
-                    <span>Ajouter </span>
-                    <input name="amount" type="number" required id="amount" min="0" step="0.1" />
-                    <span sur ma balance> $CA sur ma balance</span>
-                    <input name="submit" type="submit" value="Ajouter" id="submit" />
-                </form>
-                <button id="remboursement">Remboursement</button>
-                <button id="historic"><a href="transactionHistory.html">Historique des transactions</a></button>
-            </div>
-        </section>
 
         <div id="other">
-            <button id="historic" class="customButton"><a href="movieHistory.html">Films visionnés</a></button>
-            <button id="published" class="customButton"><a href="historicPublished">Films publiés</a></button>
+            <button id="historic" class="customButton"><a href="movieHistory.html">Films validés</a></button>
+            <button id="published" class="customButton"><a href="memberList.html">Liste des membres</a></button>
         </div>
         <footer>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus lacinia est, vitae ultrices mauris ullamcorper at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dictum cursus tellus hendrerit pretium. Ut eu sapien est. Mauris interdum tellus id mi ultrices sollicitudin. Proin convallis ut mi at mollis. Cras vel suscipit tellus.

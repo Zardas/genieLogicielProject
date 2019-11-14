@@ -140,11 +140,21 @@ section #option {
 #balance form #submit:hover {
     background-color: #e39b46;
 }
-#balance button {
+#balance #remboursement {
     float: right;
     background-color: #d91e18;
-    padding: 2px;
+    padding: 5px;
     border: none;
+}
+#balance #historic {
+    float: right;
+    background-color: var(--light-orange);
+    padding: 5px;
+    border: none;
+    margin-right: 10px;
+}
+#balance #historic:hover {
+    background-color: var(--brighter-orange);
 }
 
 #other {

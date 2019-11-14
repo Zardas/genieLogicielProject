@@ -40,7 +40,7 @@ function eventWindow() {
 /* Devellop synopsis */
 let synopsisDevellop = false;
 
-function devellopSynopsis() {
+function devellopSynopsisNormal() {
     let synopsis = document.getElementById("synopsis");
     let synopsisLogo = document.getElementById("synopsisDevellop");
     let synopsisSuite = document.getElementById("synopsisSuite");
@@ -53,6 +53,25 @@ function devellopSynopsis() {
         synopsis.style.overflow = "hidden";
         synopsisSuite.style.display = "block";
         synopsisLogo.setAttribute("src", "../images/undeveloppLogo.png");
+    }
+
+    synopsisDevellop = !synopsisDevellop;
+}
+
+
+function devellopSynopsisBlack() {
+    let synopsis = document.getElementById("synopsis");
+    let synopsisLogo = document.getElementById("synopsisDevellop");
+    let synopsisSuite = document.getElementById("synopsisSuite");
+
+    if(!synopsisDevellop) {
+        synopsis.style.overflow = "visible";
+        synopsisSuite.style.display = "none";
+        synopsisLogo.setAttribute("src", "../images/developpLogoBlack.png");
+    } else {
+        synopsis.style.overflow = "hidden";
+        synopsisSuite.style.display = "block";
+        synopsisLogo.setAttribute("src", "../images/undeveloppLogoBlack.png");
     }
 
     synopsisDevellop = !synopsisDevellop;

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Génie logiciel project</title>
+        <link rel="stylesheet" href="../css/static.css"> <!-- Nav + footer -->
+        <link rel="stylesheet" href="../css/historic.css"><!-- Search + movie browsed -->
+    </head>
+
+
+
+    <body>
+        <header>
+
+                <nav>
+                    <ul class="menu">
+                        <li class="logo"><a href="../index.html">Titre</a></li>
+                        <li class="item"><a href="../index.html">Accueil</a></li>
+                        <li class="item"><a href="browsingMovie.html">Rechercher un film</a></li>
+                        <li class="item"><a href="#">A propos</a></li>
+                        <!--<li class="item button"><a href="#">Connexion</a></li>
+                        <li class="item button secondary"><a href="pages/inscription.html">Inscription</a></li>-->
+                        <li class="item" class="itemMonCompte"><a href="account.html">Mon compte</a>
+                            <ul>
+                                <li>Données</li>
+                                <li>Historique</li>
+                                <li>Solde</li>
+                                <li><a href="../index.html">Déconnexion</a></li>
+                            </ul>
+                        </li>
+                        <li class="toogle" onclick="toogleMenu()"><a href="#"><img src="../images/crossBlack.png"></a></li>
+                    </ul>
+                </nav>
+
+        </header>
+
+        <div id="addMovie">
+            <a href="addMovie.html">
+                <p>Add Movie</p>
+                <img src="../images/plusBlack.png" alt="Plus" />
+            </a>
+        </div>
+
+        <button id="return" onclick="history.back()">
+                < Retour
+        </button>
+
+
+        <h3>Historique des films visionnés</h3>
+
+        <ul id="historic">
+            <li>
+                <a href="movieDetail.html"><p>Titre film 1 <span id="realisator"> ajouté par <span>membre1</span></span></p></a>
+            </li>
+            <li>
+                <a href="movieDetail.html"><p>Titre film 2 <span id="realisator"> ajouté par <span>membre3</span></span></p></a>
+            </li>
+            <li>
+                <a href="movieDetail.html"><p>Titre film 4 <span id="realisator"> ajouté par <span>membre9</span></span></p></a>
+            </li>
+            <li>
+                <a href="movieDetail.html"><p>Titre film 5 <span id="realisator"> ajouté par <span>membre4</span></span></p></a>
+            </li>
+        </ul>
+        <footer>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed cursus lacinia est, vitae ultrices mauris ullamcorper at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed dictum cursus tellus hendrerit pretium. Ut eu sapien est. Mauris interdum tellus id mi ultrices sollicitudin. Proin convallis ut mi at mollis. Cras vel suscipit tellus.
+        </footer>
+
+        <script type="text/javascript" src="../js/index.js"></script>
+    </body>
+</html>

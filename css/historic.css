@@ -1,0 +1,77 @@
+/* Return */
+#return {
+    position: fixed;
+    left: 2.5%;
+    background-color: var(--light-orange);
+    padding: 5px;
+    text-transform: uppercase;
+    border: none;
+}
+#return:hover {
+    background-color: var(--brighter-orange);
+}
+
+/* Title */
+h3 {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#historic {
+    margin-left: 10%;
+    margin-right: 10%;
+    list-style-type: none;
+}
+@media all and (min-width: 900px) { /* Desktop mode */
+    #historic {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+#historic li {
+    background-color: #c9c8c6;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-left: 5px solid var(--light-orange);
+}
+#historic li:hover {
+    background-color: var(--brighter-orange);
+}
+#historic p {
+    font-weight: bold;
+}
+
+/* Liste des films */
+#historic p #realisator {
+    font-weight: normal;
+    float: right;
+    font-style: italic;
+}
+#historic p #realisator span {
+    font-weight: bold;
+}
+
+/* Liste des membres */
+
+#historic p img {
+    height: 7%;
+    width: 7%;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+
+/* Liste des transactions */
+#historic li .transactionDate {
+    float: right;
+    font-weight: normal;
+    font-style: italic;
+}
+.positiv {
+    color: green;
+}
+.negativ {
+    color: red;
+}

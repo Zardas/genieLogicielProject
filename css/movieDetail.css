@@ -1,0 +1,266 @@
+/* Return */
+#return {
+    position: fixed;
+    left: 2.5%;
+    background-color: var(--light-orange);
+    padding: 5px;
+    text-transform: uppercase;
+    border: none;
+}
+#return:hover {
+    background-color: var(--brighter-orange);
+}
+
+
+
+/* Movie selected */
+#selectedMovie {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#selectedMovie #watchTrailerPlusDonnees {
+    text-align: center;
+}
+#selectedMovie #watchTrailerPlusDonnees button {
+    height: 4em;
+    width: 40%;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid var(--light-orange);
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 3%;
+    vertical-align: top;
+}
+#selectedMovie #options { /* Synopsis */
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+#selectedMovie #options #readSynopsis {
+    margin-bottom: .5em;
+    font-size: 1em;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+}
+#selectedMovie #options #readSynopsis img {
+    height: 1em;
+    width: 1em;
+}
+#selectedMovie #options #synopsis {
+    height: 1.5em;
+    overflow: hidden;
+}
+#selectedMovie #options #synopsisSuite {
+    font-weight: bold;
+    cursor: pointer;
+}
+#selectedMovie #watchTrailerPlusDonnees button:hover {
+    background-color: var(--light-orange);
+    color: black;
+}
+#selectedMovie #watchMovie:hover {
+    background-color: var(--brighter-orange);
+}
+
+/* Tablet and Mobile version */
+@media all and (max-width: 900px) {
+    #selectedMovie #movie { /* Affiche du film */
+        border: 1px solid var(--light-orange);
+        height: 150px;
+        width: 70%;
+        margin-top: 5%;
+        margin-left: 15%;
+        cursor: pointer;
+    }
+    #selectedMovie #movie img {
+        height: 100%;
+        width: 100%;
+    }
+    #selectedMovie h3 { /* Titre du film */
+        margin-top: 2.5%;
+        cursor: pointer;
+        text-align: center;
+        width: 100%;
+        font-size: 1.5em;
+    }
+    #selectedMovie #watchMovie { /* Bouton regarder le film */
+        margin-top: 5%;
+        width: 50%;
+        margin-left: 25%;
+        font-size: .8em;
+        font-weight: bold;
+        background-color: var(--light-orange);
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    #selectedMovie #watchTrailerPlusDonnees { /* Boutons de regarder le film + regarder le trailer */
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 5%;
+    }
+}
+
+
+/* Desktop version */
+@media all and (min-width: 900px) {
+    #selectedMovie #movie { /* Affiche du film */
+        border: 1px solid var(--light-orange);
+        height: 400px;
+        width: 300px;
+        margin-top: 5%;
+        margin-left: 10%;
+        cursor: pointer;
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+    }
+    #selectedMovie #movie img {
+        height: 100%;
+        width: 100%;
+    }
+    #selectedMovie #divSide {
+        display: inline-block;
+        margin-top: 10%;
+        width: 40%;
+        margin-left: 5%;
+        vertical-align: top;
+    }
+    #selectedMovie #divSide h3 {
+        font-size: 2em;
+        margin-bottom: 5%;
+    }
+    #selectedMovie #watchMovie {
+        font-size: 1em;
+        font-weight: bold;
+        background-color: var(--light-orange);
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        width: 100%;
+        margin-bottom: 7%;
+    }
+    #selectedMovie #watchTrailerPlusDonnees button {
+        margin: 0;
+        margin-right: 6%;
+        margin-bottom: 6%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Add movie */
+    #upload {
+        text-align: center;
+        margin-left: 15%;
+        width: 70%;
+        padding: 0.5em;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: var(--light-orange);
+        border: none;
+    }
+    #upload:hover {
+        background-color: var(--brighter-orange);
+    }
+    #selectedMovie form {
+        margin-left: 15%;
+        width: 70%;
+        margin-top: 20px;
+    }
+    #selectedMovie form #title {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid gray;
+        margin-bottom: 15px;
+    }
+    #selectedMovie form #title:focus {
+        border-bottom: 1px solid var(--light-orange);
+    }
+    #selectedMovie form #uploadTrailer {
+        float: right;
+        padding: 5px;
+        font-weight: bold;
+        background-color: var(--light-orange);
+        border: none;
+    }
+    #selectedMovie form #uploadTrailer:hover {
+        background-color: var(--brighter-orange);
+    }
+    #selectedMovie form #synopsis {
+        height: 100px;
+        width: 100%;
+    }
+    #selectedMovie form #submit {
+        margin-top: 20px;
+        margin-left: 25%;
+        width: 50%;
+        padding: .5em;
+        font-weight: bold;
+        border: none;
+        background-color: var(--light-orange);
+    }
+    #selectedMovie form #submit:hover {
+        background-color: var(--brighter-orange);
+    }
+/* Add movie for desktop */
+@media all and (min-width: 900px) {
+    #upload {
+        display: none;
+    }
+    #uploadDesktop {
+        text-align: center;
+        padding: 0.5em;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: var(--light-orange);
+        border: none;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        cursor: pointer;
+    }
+    #uploadDesktop:hover {
+        background-color: var(--brighter-orange);
+    }
+    h3 {
+        text-align: center;
+    }
+    #form {
+        display: inline-block;
+        width: 50%;
+        vertical-align: bottom;
+        height: 400px;
+        padding: 0;
+    }
+    #form form{
+        margin: 0;
+        margin-left: 5%;
+    }
+    #form form #title {
+        margin-bottom: 10%;
+    }
+    #form form textarea {
+        margin-bottom: 10%;
+    }
+    #movie {
+        vertical-align: bottom;
+    }
+}

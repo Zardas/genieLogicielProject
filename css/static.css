@@ -270,4 +270,10 @@ footer {
     margin-top: 1em;
     font-size: .7em;
     color: rgba(0,0,0,.8);
+    position: fixed;
+    bottom: 0;
+    opacity: .6;
+}
+footer:hover {
+    opacity: 1;
 }
