@@ -11,36 +11,30 @@
 
 
     <body>
-        <header>
 
-                <nav>
-                    <ul class="menu">
-                        <li class="logo"><a href="../index.html">Title</a></li>
-                        <li class="item"><a href="../index.html">Accueil</a></li>
-                        <li class="item"><a href="browsingMovie.html">Rechercher un film</a></li>
-                        <li class="item"><a href="#">A propos</a></li>
-                        <!--<li class="item button"><a href="#">Connexion</a></li>
-                        <li class="item button secondary"><a href="pages/inscription.html">Inscription</a></li>-->
-                        <li class="item" class="itemMonCompte"><a href="account.html">Mon compte</a>
-                            <ul>
-                                <li>Données</li>
-                                <li>Historique</li>
-                                <li>Solde</li>
-                                <li><a href="../index.html">Déconnexion</a></li>
-                            </ul>
-                        </li>
-                        <li class="toogle" onclick="toogleMenu()"><a href="#"><img src="../images/crossBlack.png"></a></li>
-                    </ul>
-                </nav>
+            <header>
 
-        </header>
+                    <nav>
+                        <ul class="menu">
+                            <li class="logo"><a href="../index.html">Titre</a></li>
+                            <li class="item"><a href="../index.html">Accueil</a></li>
+                            <li class="item"><a href="browsingMovie.html">Rechercher un film</a></li>
+                            <!--<li class="item button"><a href="connexion.html">Connexion</a></li>
+                            <li class="item button secondary"><a href="inscription.html">Inscription</a></li>-->
+                            <li class="item" class="itemMonCompte"><a href="account.html">Mon compte</a>
+                                <ul>
+                                    <li><a href="account.html">Solde</a></li>
+                                    <li><a href="movieHistory.html">Historique</a></li>
+                                    <li><a href="../index.html">Déconnexion</a></li>
+                                </ul>
+                            </li>
+                            <li class="toogle" onclick="toogleMenu2()"><a href="#"><img src="../images/crossBlack.png" id="toogle"></a></li>
+                        </ul>
+                    </nav>
+        
+                </header>
 
-        <div id="addMovie">
-            <a href="addMovie.html">
-                <p>Add Movie</p>
-                <img src="../images/plusBlack.png" alt="Plus" />
-            </a>
-        </div>
+        
         
         <form id="search">
             <select name="filter">
@@ -66,28 +60,36 @@
                 <img src="../images/posters/poster2h.jpg" alt="Movie 2" />
                 <p>Movie 2</p>
             </div>
-            <div id="movie">
+            <div id="movie" onclick="selectMovie(3)">
+                <img src="../images/posters/poster3h.jpg" alt="Movie 3" />
                 <p>Movie 3</p>
             </div>
-            <div id="movie">
+            <div id="movie" onclick="selectMovie(4)">
+                <img src="../images/posters/poster4h.jpg" alt="Movie 4" />
                 <p>Movie 4</p>
             </div>
-            <div id="movie">
+            <div id="movie" onclick="selectMovie(5)">
+                <img src="../images/posters/poster5h.jpg" alt="Movie 5" />
                 <p>Movie 5</p>
             </div>
-            <div id="movie">
+            <div id="movie" onclick="selectMovie(6)">
+                <img src="../images/posters/poster6h.jpg" alt="Movie 6" />
                 <p>Movie 6</p>
             </div>
-            <div id="movie">
+            <div id="movie" onclick="selectMovie(7)">
+                <img src="../images/posters/poster7h.jpg" alt="Movie 7" />
                 <p>Movie 7</p>
             </div>
-            <div id="movie">
+            <div id="movie" onclick="selectMovie(8)">
+                <img src="../images/posters/poster8h.jpg" alt="Movie 8" />
                 <p>Movie 8</p>
             </div>
-            <div id="movie">
+            <div id="movie" onclick="selectMovie(9)">
+                <img src="../images/posters/poster9h.jpg" alt="Movie 9" />
                 <p>Movie 9</p>
             </div>
-            <div id="movie">
+            <div id="movie" onclick="selectMovie(10)">
+                <img src="../images/posters/poster10h.jpg" alt="Movie 10" />
                 <p>Movie 10</p>
             </div>
         </div>

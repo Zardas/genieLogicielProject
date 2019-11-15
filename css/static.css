@@ -247,6 +247,7 @@ nav ul li ul {
     right: 20px;
     background-color: var(--brighter-orange);
     padding: 3px;
+    top: 20%;
 }
 #addMovie img {
     height: 30px;

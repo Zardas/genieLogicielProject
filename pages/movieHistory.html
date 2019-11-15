@@ -11,36 +11,32 @@
 
 
     <body>
-        <header>
-
-                <nav>
-                    <ul class="menu">
-                        <li class="logo"><a href="../index.html">Titre</a></li>
-                        <li class="item"><a href="../index.html">Accueil</a></li>
-                        <li class="item"><a href="browsingMovie.html">Rechercher un film</a></li>
-                        <li class="item"><a href="#">A propos</a></li>
-                        <!--<li class="item button"><a href="#">Connexion</a></li>
-                        <li class="item button secondary"><a href="pages/inscription.html">Inscription</a></li>-->
-                        <li class="item" class="itemMonCompte"><a href="account.html">Mon compte</a>
-                            <ul>
-                                <li>Données</li>
-                                <li>Historique</li>
-                                <li>Solde</li>
-                                <li><a href="../index.html">Déconnexion</a></li>
-                            </ul>
-                        </li>
-                        <li class="toogle" onclick="toogleMenu()"><a href="#"><img src="../images/crossBlack.png"></a></li>
-                    </ul>
-                </nav>
-
-        </header>
-
-        <div id="addMovie">
-            <a href="addMovie.html">
-                <p>Add Movie</p>
-                <img src="../images/plusBlack.png" alt="Plus" />
-            </a>
-        </div>
+            <div id="addMovie">
+                    <a href="addMovie.html">
+                        <p>Ajouter un film</p>
+                        <img src="../images/plusBlack.png" alt="Plus" />
+                    </a>
+                </div>
+        
+                <header>
+                    <nav>
+                        <ul class="menu">
+                            <li class="logo"><a href="../index.html">Titre</a></li>
+                            <li class="item"><a href="../index.html">Accueil</a></li>
+                            <li class="item"><a href="browsingMovie.html">Rechercher un film</a></li>
+                            <!--<li class="item button"><a href="#">Connexion</a></li>
+                            <li class="item button secondary"><a href="pages/inscription.html">Inscription</a></li>-->
+                            <li class="item" class="itemMonCompte"><a href="account.html">Mon compte</a>
+                                <ul>
+                                    <li><a href="account.html">Solde</a></li>
+                                    <li><a href="movieHistory.html">Historique</a></li>
+                                    <li><a href="../index.html">Déconnexion</a></li>
+                                </ul>
+                            </li>
+                            <li class="toogle" onclick="toogleMenu2()"><a href="#"><img src="../images/crossBlack.png" id="toogle"></a></li>
+                        </ul>
+                    </nav>
+                </header>
 
         <button id="return" onclick="history.back()">
                 < Retour

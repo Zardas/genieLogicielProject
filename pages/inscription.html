@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <title>Génie logiciel project</title>
         <link rel="stylesheet" href="../css/static.css"> <!-- Nav + footer -->
-        <link rel="stylesheet" href="../css/connexion.css"> <!-- Search + movie browsed -->
+        <link rel="stylesheet" href="../css/inscription.css"> <!-- Search + movie browsed -->
     </head>
 
 
@@ -36,28 +36,32 @@
 
         <form>
             <fieldset>
-                <legend>Connexion</legend>
+                <legend>Inscription</legend>
                 
                 <!-- Mail -->
-                <div id="mailOrUsername">
-                    <label for="mail">Adresse courriel ou nom d'utilisateur : </label>
+                <div id="mail">
+                    <label for="mail">Adresse courriel : </label>
                     <input name="mail" type="email" placeholder="example@domain.ca" required autofocus />
                 </div>
 
                 <!-- Username -->
-                <div id="password">
+                <div id="usernameAndPassword">
+                    <div>
+                        <label for="username">Nom d'utilisateur : </label>
+                        <input name="username" type="text" />
+                    </div>
                     <div>
                             <label for="password">Mot de passe : </label>
                             <input name="password" type="password" />
                     </div>
                 </div>
                 <div id="submit">
-                        <a href="account.html"><input name="connexion" type="submit" value="Connexion" /></a>
+                    <a href="account.html"><input name="inscription" type="submit" value="Inscription" /></a>
                 </div>
             </fieldset>
         </form>
 
-        <p id="dejaInscrit">Pas encore inscrit ? <a href="inscription.html">Inscription</a></p>
+        <p id="dejaInscrit">Déjà inscrit ? <a href="connexion.html">Connexion</a></p>
 
 
         <footer>
