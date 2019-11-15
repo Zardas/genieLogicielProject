@@ -42,6 +42,20 @@
             </a>
         </div>
         
+        <form id="search">
+            <select name="filter">
+                <option value="title">Titre</option>
+                <option value="Réalisateur">Réalisateur</option>
+                <option value="Genre">Genre</option>
+                <option value="durée">Durée</option>
+            </select>
+            <input type="search" id="searchInput" />
+            <div id="plus"><img src="../images/plusBlack.png" alt="Plus de filtres" /></div>
+            <br />
+            <input type="submit" id="submit" value="Rechercher" />
+        </form>
+
+
         <!-- Exemples for demo -->
         <div id="moviesBrowsed">
             <div id="movie" onclick="selectMovie(1)">
@@ -95,7 +109,7 @@
 
                 <div id="watchTrailerPlusDonnees">
                     <button>Trailer</button>
-                    <button>Données du film</button>
+                    <button><a href="movieDetail.html">Données du film</a></button>
                 </div>
 
                 <div id="options">

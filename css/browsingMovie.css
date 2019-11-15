@@ -1,4 +1,60 @@
 
+/* Search */
+#search {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#search select {
+    width: 150px;
+    padding: 3px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    height: 34px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(https://icon-library.net/images/black-down-arrow-icon/black-down-arrow-icon-24.jpg) 96% / 15% no-repeat #eee;
+}
+#search input {
+    border: 2px solid var(--light-orange);
+    margin: 0;
+    padding: 3px;
+    font-size: 15px;
+    background-color: transparent;
+}
+#search input:focus {
+    background-color: #eee;
+}
+#search #plus {
+    height: 31px;
+    width: 31px;
+    padding: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    background-color: var(--brighter-orange);
+    border-radius: 50% 50% 50% 50%;
+    cursor: pointer;
+}
+#search #plus:hover {
+    background-color: var(--light-orange);
+}
+#search #plus img {
+    height: 100%;
+    width: 100%;
+}
+#search #submit {
+    margin-top: 10px;
+    background-color: var(--light-orange);
+    padding: 3px;
+}
+#search #submit:hover {
+    background-color: var(--brighter-orange);
+}
+
+
+
+
 /* Movie Browsed */
 #moviesBrowsed {
     margin-left: 2.5%;
@@ -183,3 +239,4 @@
         margin-bottom: 6%;
     }
 }
+
