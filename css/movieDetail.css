@@ -219,6 +219,12 @@
     #selectedMovie form #submit:hover {
         background-color: var(--brighter-orange);
     }
+
+@media all and (max-width: 900px) {
+    #uploadDesktop {
+        display: none;
+    }
+}
 /* Add movie for desktop */
 @media all and (min-width: 900px) {
     #upload {

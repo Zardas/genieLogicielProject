@@ -17,9 +17,6 @@ function selectMovie(movieId) {
         }
         
         /* L'utilisateur ne peut pas scroll lorsque il est en preview de film */
-        let body = document.getElementsByTagName('body')[0];
-        body.style.overflowX = "hidden";
-        body.style.overflowY = "hidden";
     }
 
     windowOpen = !windowOpen;
